@@ -495,24 +495,6 @@ background-color: rgba(7, 37, 206, 0.9) !important;
   padding: 1rem 3% 0 4%;
   height: 250px;
 }
-.work-content .w-more {
-  color: #4e4e4e;
-  font-size: 0.8rem;
-}
-.work-content .w-more .w-ctegory {
-  color: #0078ff;
-}
-.work-content .w-like {
-  font-size: 2.5rem;
-  color: #0078ff;
-  float: right;
-}
-.work-content .w-like a {
-  color: #0078ff;
-}
-.work-content .w-like .num-like {
-  font-size: 0.7rem;
-}
 
 .w-title {
   font-size: 1.2rem;

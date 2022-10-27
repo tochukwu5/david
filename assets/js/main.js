@@ -6,6 +6,52 @@
 (function() {
   "use strict";
 
+
+// hero section greeting
+
+let text; // for speech synthesis
+
+const time = new Date().getHours();
+let greeting;
+if (time < 12) {
+  text = " Good morning, I am david, you are welcome to my portfolio website, feel free to contact me";
+  greeting = "Hi, Good morning I'm David";
+} else if (time < 16) {
+  text = " Good afternoon, I am david, you are welcome to my portfolio website, feel free to contact me";
+  greeting = "Hi, Good afternoon I'm David";
+} 
+else if (time < 18) {
+  text = " Good day, I am david, you are welcome to my portfolio website, feel free to contact me";
+  greeting = "Hi, Good day I'm David";
+} else {
+  text = " Good evening, I am david, you are welcome to my portfolio website, feel free to contact me";
+  greeting = "Hi, Good evening I'm David";
+}
+document.getElementById("demo").innerHTML = greeting;
+
+
+
+
+const speakNow = () => {
+
+// Check if Speech Synthesis supported
+
+if ("speechSynthesis" in window) {
+
+const msg = new SpeechSynthesisUtterance();
+
+msg.pitch = 0.7;
+
+msg.rate = 0.7;
+
+msg.text = text;
+
+window.speechSynthesis.speak(msg);
+
+} 
+};
+window.onload = speakNow()
+
   /**
    * Easy selector helper function
    */
@@ -203,50 +249,6 @@
 })();
 
 
-// hero section greeting
-
-let text; // for speech synthesis
-
-const time = new Date().getHours();
-let greeting;
-if (time < 12) {
-  text = " Good morning, I am david, you are welcome to my portfolio website, feel free to contact me";
-  greeting = "Hi, Good morning I'm David";
-} else if (time < 16) {
-  text = " Good afternoon, I am david, you are welcome to my portfolio website, feel free to contact me";
-  greeting = "Hi, Good afternoon I'm David";
-} 
-else if (time < 18) {
-  text = " Good day, I am david, you are welcome to my portfolio website, feel free to contact me";
-  greeting = "Hi, Good day I'm David";
-} else {
-  text = " Good evening, I am david, you are welcome to my portfolio website, feel free to contact me";
-  greeting = "Hi, Good evening I'm David";
-}
-document.getElementById("demo").innerHTML = greeting;
-
-
-
-
-const speakNow = () => {
-
-// Check if Speech Synthesis supported
-
-if ("speechSynthesis" in window) {
-
-const msg = new SpeechSynthesisUtterance();
-
-msg.pitch = 0.7;
-
-msg.rate = 0.7;
-
-msg.text = text;
-
-window.speechSynthesis.speak(msg);
-
-} 
-};
-window.onload = speakNow()
 
 
 
@@ -325,7 +327,7 @@ if(window.scrollY > nav.offsetHeight + 250){
 
 const myTags = [
   'JavaScript', 'CSS',
-   'HTML', 'React',
+   'HTML', 'React', 'Npm',
     'Git', 'Boostrap',
   'Tailwindcss', 'Effective communication'
   

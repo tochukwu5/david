@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   /* background:url("../img/favicon.png") top center ; */
-  background: linear-gradient(to top, rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%), url(../img/hero.jpg);
+  background: linear-gradient(to top, rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%), url(../bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

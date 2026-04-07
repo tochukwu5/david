@@ -327,7 +327,8 @@ if(window.scrollY > nav.offsetHeight + 250){
 const myTags = [
   'JavaScript', 'CSS',
    'HTML', 'React', 'Npm',
-    'Git', 'Boostrap',
+    'Git', 'Nodejs',
+    'MongoDB', 'Express', ,
   'Tailwindcss', 'Effective communication'
   
 ];
